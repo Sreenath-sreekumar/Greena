@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Sreenath Dashboard template -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/background11-1920x1269.jpg" type="image/x-icon">
+  <meta name="description" content="HTML Template for Cafe eCommerce Website. Download Now!">
+  <title>Dashboard</title>
+ 
+
+ <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/font-style.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+<header class="top_nav pt-3 pb-3 pl-md-5 pr-md-5">
+    <nav class="navbar-content">
+        <ul class="nav-content-left">
+            <li class="logo"><a href="#"><img src="images/logo.png"/></a></li>
+            <li class="burger-menu-btn ml-5 mt-1">
+                <div class="menu-button" href="">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </li>
+            <li class="top-search ml-4">
+                <input type="search" class="form-control"  placeholder="Search...">
+            </li>
+        </ul>
+
+        <ul class="nav-content-right">
+            <li class="notification-dropdown">
+                <div class="notification-btn">
+                    <i class="icon-notification"></i>
+                    <span class="notification-round-badge">18</span>
+                </div>
+                <div class="dropdown-list-popup">
+                    
+                </div>
+
+            </li>
+
+            <li class="user-name-img ml-5">
+                <div class="user-details">
+                <div class="user-img">
+                    <img src="images/avatar-1.jpg">
+                </div>
+                <div class="user-name">Sreenath</div>
+                <i class="icon-down-arrow"></i>
+                </div>   
+                    
+                <div class="user-details-popup">
+                    
+                </div>
+
+            </li>
+            <li class="settings-btn ml-4">
+                <i class="icon-settings"></i>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<div class="left-sidemenu">
+    <ul>
+        <li class="nav-head"><h3>Navigation</h3></li>
+        <li class="menu_active">
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+                <i class="icon-right-arrow"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="icon-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<section class="content-section">
+   <div class="row">
+<nav class="heading-bar pl-md-5 pr-md-5 clearfix">
+        <div class="main-heading float-left">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="sublinks float-right">
+            <ul>
+                <li>Greeva</li>
+                <li>Dashboard</li>
+            </ul>
+        </div>
+          </nav>
+        </div> 
+  
+  <div class="row">
+      <div class="col-xl-8">
+          <div class="banner mt-4">
+               <div><img class="img-fluid" src="images/banner-image1.jpg"/></div>
+               <div><img class="img-fluid" src="images/banner-image2.jpg"/></div>
+          </div>
+      </div>
+      <div class="col-xl-4"></div>
+  </div>
+
+</section>
+
+
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
+  
+
+
+  <script type="text/javascript">
+
+   $( document ).ready(function() {
+    $('.burger-menu-btn').click(function() {
+       $('body').toggleClass('slide-menu-show')
+    });
+
+      $('.notification-btn').click(function() {
+       $('.dropdown-list-popup').toggleClass('dropdown-list-popup-show')
+    });
+
+       $('.user-name-img').click(function() {
+       $('.user-details-popup').toggleClass('user-details-popup-show')
+    });
+
+        $('.banner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+
+        });
+
+        $( "p" ).click(function() {
+        $( this ).slideUp();
+        });
+
+});
+
+  </script>
+
+ 
+  
+  
+</body>
+</html>
